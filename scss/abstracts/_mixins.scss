@@ -1,0 +1,19 @@
+@mixin configContent {
+  float: left;
+  padding: 2rem;
+  height: 100%;
+
+  color: $dark-theme-text-color;
+  font-size: $default-font-size;
+  background-color: $dark-theme-color-primary;
+}
+
+@mixin header-footerConfig {
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+
+  font-size: $default-font-size;
+  background-color: $dark-theme-color-primary;
+  color: $dark-theme-text-color;
+}

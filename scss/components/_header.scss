@@ -1,0 +1,5 @@
+.header {
+  border-bottom: 0.2rem solid $dark-theme-text-color;
+
+  @include header-footerConfig;
+}

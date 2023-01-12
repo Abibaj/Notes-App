@@ -4,7 +4,7 @@
   "description": "A nice little project to work on in a week",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Abibaj/Notes-App/issues"
   },
-  "homepage": "https://github.com/Abibaj/Notes-App#readme"
+  "homepage": "https://github.com/Abibaj/Notes-App#readme",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
 }

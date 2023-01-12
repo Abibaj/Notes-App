@@ -1,0 +1,6 @@
+.sidebar {
+  width: 30%;
+  border-right: 0.2rem solid $dark-theme-text-color;
+
+  @include configContent;
+}
