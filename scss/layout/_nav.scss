@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  a {
+    text-decoration: none;
+
+    .sidebar__card {
+      color: $dark-theme-text-color;
+
+      width: fit-content;
+      height: 4.5rem;
+      border-radius: 100px;
+      padding: 0.5rem 2.5rem;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #999;
+      }
+    }
+  }
+}

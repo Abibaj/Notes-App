@@ -1,0 +1,23 @@
+.new-note-btn {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 4rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 1rem;
+
+  background-color: $dark-theme-text-color;
+
+  a {
+    text-decoration: none;
+    color: $dark-theme-color-primary;
+    border: none;
+  }
+}

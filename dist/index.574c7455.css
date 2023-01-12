@@ -39,19 +39,60 @@ body {
   font-size: 1.6rem;
 }
 
+.new-note-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 4rem;
+  display: flex;
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.new-note-btn a {
+  color: #444;
+  border: none;
+  text-decoration: none;
+}
+
 .overview {
-  width: 70%;
+  width: 75%;
   height: 100%;
   float: left;
   height: 100%;
   color: #ddd;
   background-color: #444;
+  flex-flow: wrap;
+  justify-content: space-between;
   padding: 2rem;
   font-size: 1.6rem;
+  display: flex;
+  overflow: scroll;
+}
+
+.overview::-webkit-scrollbar {
+  display: none;
+}
+
+.overview .note-card {
+  min-width: 32%;
+  max-width: 49%;
+  height: 12rem;
+  border: 1px solid #999;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  overflow: hidden;
 }
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   float: left;
   height: 100%;
   color: #ddd;
@@ -63,6 +104,34 @@ body {
 
 .content {
   height: 100vh;
+  position: relative;
+}
+
+.nav {
+  flex-direction: column;
+  justify-content: start;
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a .sidebar__card {
+  color: #ddd;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 4.5rem;
+  border-radius: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem 2.5rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.nav a .sidebar__card:hover {
+  background-color: #999;
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */
