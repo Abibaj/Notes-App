@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/Abibaj/Notes-App#readme",
   "dependencies": {
-    "@parcel/transformer-sass": "^2.7.0"
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "parcel": "^2.8.2"
