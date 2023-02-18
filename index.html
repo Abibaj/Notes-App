@@ -11,20 +11,121 @@
     <link rel="stylesheet" href="img/icons/sprite.svg" />
     <link rel="stylesheet" href="scss/main.scss" />
 
+    <script defer src="./js/index.js"></script>
     <title>Notes</title>
   </head>
   <body>
-    <header class="header">Notes</header>
+    <header class="header">
+      <div class="left-icons">
+        <a class="nav-bar__icons" href="/">
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </a>
+        <a class="nav-bar__icons" href="/">
+          <!-- <svg class="icon">
+            <use href="./img/icons/icons.svg#icon-file-text"></use>
+          </svg> -->
+          <span>Notes App</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search Notes" />
+          <label for="#e" class="search__button">
+            <svg class="search__icon">
+              <use
+                xlink:href="./img/icons/sprite.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </label>
+        </form>
+      </div>
+
+      <div class="right-bar">
+        <a class="nav-bar__icons">
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#icon-onedrive"></use>
+          </svg>
+        </a>
+        <a class="nav-bar__icons">
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#icon-contrast"></use></svg
+        ></a>
+        <a class="nav-bar__icons">
+          <svg class="icon">
+            <use href="./img/icons/icons.svg#icon-cog1"></use>
+          </svg>
+        </a>
+        <a class="nav-bar__icons" href="#">
+          <img
+            src="./img/users/user-1.jpg"
+            alt="User photo"
+            class="user-photo"
+          />
+        </a>
+      </div>
+    </header>
     <div class="content">
       <div class="sidebar">
         <nav class="nav">
-          <a href="#"> <div class="sidebar__card">Note</div> </a>
-          <a href="#"> <div class="sidebar__card">Reminders</div> </a>
-          <a href="#"> <div class="sidebar__card">Create new label</div> </a>
-          <a href="#"> <div class="sidebar__card">Archive</div> </a>
-          <a href="#"> <div class="sidebar__card">Deleted</div> </a>
-          <a href="#"> <div class="sidebar__card">Settings</div> </a>
-          <a href="#"> <div class="sidebar__card">Help & feedback</div> </a>
+          <a href="/new-note">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-file-text2"></use>
+              </svg>
+              <span class="sidebar__text"> New Note </span>
+            </div>
+          </a>
+          <a href="/reminders">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-alarm"></use>
+              </svg>
+              <span class="sidebar__text"> Reminders </span>
+            </div>
+          </a>
+          <a href="/newlabel">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-price-tag1"></use>
+              </svg>
+              <span class="sidebar__text"> Create new label </span>
+            </div>
+          </a>
+          <a href="/archive">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-box-add"></use>
+              </svg>
+              <span class="sidebar__text"> Archive </span>
+            </div>
+          </a>
+          <a href="/deleted">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-bin"></use>
+              </svg>
+              <span class="sidebar__text"> Deleted </span>
+            </div>
+          </a>
+          <a href="/settings">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-cog1"></use>
+              </svg>
+              <span class="sidebar__text"> Settings </span>
+            </div>
+          </a>
+          <a href="/faq">
+            <div class="sidebar__card">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-help"></use>
+              </svg>
+              <span class="sidebar__text"> Help & feedback </span>
+            </div>
+          </a>
         </nav>
       </div>
       <section class="overview">
@@ -95,8 +196,59 @@
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
       </section>
-      <button class="new-note-btn"><a href="#">+</a></button>
+      <!-- <button class="new-note-btn"><a href="#">+</a></button> -->
     </div>
-    <footer class="footer">Footer</footer>
+    <footer class="footer" id="section__contact">
+      <!-- <p class="footer__logo">
+          <img
+            src="./img/my-logo-3.jpeg"
+            alt="Footer logo"
+            class="footer__logo--img"
+          />
+        </p> -->
+      <div class="footer__details">
+        <ul class="social-media-links">
+          <li>
+            <a href="https://twitter.com/_IbraheemAbiola" class="sm__icon">
+              <svg class="icon">
+                <use href="./img/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abiola-ibraheem-ajibola-664b63247/"
+              class="sm__icon"
+              ><svg class="icon">
+                <use href="./img/icons/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Abibaj" class="sm__icon"
+              ><svg class="icon">
+                <use href="./img/icons/icons.svg#icon-github1"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.facebook.com/abiola.ibraheem.1466/"
+              class="sm__icon"
+              ><svg class="icon">
+                <use href="./img/icons/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:abiolaibraheemajibola@gmail.com" class="sm__icon"
+              ><svg class="icon">
+                <use href="./img/icons/icons.svg#icon-google3"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <p class="footer__details--copyright">
+          Copyright © 2021 My Website. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

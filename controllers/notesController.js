@@ -25,6 +25,7 @@ exports.getAllNotes = async (req, res, next) => {
   // Send a JSON response with the notes and a success message
   res.status(200).json({
     message: "success",
+    quantity: notes.length,
     data: { notes },
   });
 };

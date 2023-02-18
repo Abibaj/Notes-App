@@ -12,7 +12,8 @@
       width: fit-content;
       height: 4.5rem;
       border-radius: 100px;
-      padding: 0.5rem 2.5rem;
+      padding: 0.5rem 2.5rem 0.5rem 2rem;
+      margin-bottom: 1.5rem;
 
       display: flex;
       justify-content: flex-start;
@@ -21,7 +22,7 @@
       transition: all 0.3s;
 
       &:hover {
-        background-color: #999;
+        background-color: #666;
       }
     }
   }
