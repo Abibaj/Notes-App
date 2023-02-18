@@ -10,6 +10,7 @@ const xss = require("xss-clean");
 const cookieParser = require("cookie-parser");
 
 const noteRouter = require("./routes/noteRoutes");
+const viewRouter = require("./routes/viewRoutes");
 
 ////
 const app = express();
@@ -42,5 +43,6 @@ app.use(mongoSanitize());
 app.use(xss());
 
 app.use("/api/v1/note", noteRouter);
+app.use("/", viewRouter);
 
 module.exports = app;

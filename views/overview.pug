@@ -1,0 +1,10 @@
+extends base
+
+block content 
+  section.overview
+    each note in notes
+      .note-card
+        span=note.note
+    
+  button.new-note-btn
+    a(href='#') +

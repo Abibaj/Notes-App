@@ -9,9 +9,20 @@ exports.createNote = async (req, res) => {
   });
 };
 
+/**
+ * @function
+ * @async
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @param {function} next - Express next middleware function
+ * @returns {Object} - JSON object containing all notes from the collection
+ *                    with a success message and status code of 200
+ */
 exports.getAllNotes = async (req, res, next) => {
+  // Retrieve all notes from the "Notes" collection and select only the "note" field
   const notes = await Notes.find().select("note");
 
+  // Send a JSON response with the notes and a success message
   res.status(200).json({
     message: "success",
     data: { notes },
