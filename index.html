@@ -33,7 +33,7 @@
       <div class="search-bar">
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Search Notes" />
-          <label for="#e" class="search__button">
+          <label for="#" class="search__button">
             <svg class="search__icon">
               <use
                 xlink:href="./img/icons/sprite.svg#icon-magnifying-glass"
@@ -50,9 +50,13 @@
           </svg>
         </a>
         <a class="nav-bar__icons">
-          <svg class="icon">
-            <use href="./img/icons/icons.svg#icon-contrast"></use></svg
-        ></a>
+          <svg class="icon icon-view remove">
+            <use href="./img/icons/icons.svg#icon-grid"></use>
+          </svg>
+          <svg class="icon icon-view">
+            <use href="./img/icons/icons.svg#icon-list"></use>
+          </svg>
+        </a>
         <a class="nav-bar__icons">
           <svg class="icon">
             <use href="./img/icons/icons.svg#icon-cog1"></use>
@@ -70,12 +74,12 @@
     <div class="content">
       <div class="sidebar">
         <nav class="nav">
-          <a href="/new-note">
+          <a href="#">
             <div class="sidebar__card">
               <svg class="icon">
                 <use href="./img/icons/icons.svg#icon-file-text2"></use>
               </svg>
-              <span class="sidebar__text"> New Note </span>
+              <span class="sidebar__text open-window"> New Note </span>
             </div>
           </a>
           <a href="/reminders">
@@ -129,75 +133,97 @@
         </nav>
       </div>
       <section class="overview">
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
         </div>
-        <div class="note-card">
+        <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
           possimus veritatis repudiandae rem maxime totam tempore illum laborum
           temporibus cum odit? Deserunt esse magni placeat rem corporis.
+        </div>
+
+        <div class="new-note__popup hidden">
+          <p class="close-note__btn">
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#icon-cancel-circle"></use>
+            </svg>
+          </p>
+          <div class="new-note__input">
+            <form action="#" class="new-note__form">
+              <textarea
+                type="text"
+                class="new-note__form--input"
+                placeholder="Write note"
+              ></textarea>
+            </form>
+          </div>
+          <p class="save-note__btn">
+            <svg class="icon">
+              <use href="./img/icons/icons.svg#icon-checkmark"></use>
+            </svg>
+          </p>
         </div>
       </section>
-      <!-- <button class="new-note-btn"><a href="#">+</a></button> -->
     </div>
+    <div class="overlay hidden"></div>
     <footer class="footer" id="section__contact">
       <!-- <p class="footer__logo">
           <img
