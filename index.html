@@ -15,14 +15,14 @@
     <title>Notes</title>
   </head>
   <body>
-    <header class="header">
-      <div class="left-icons">
-        <a class="nav-bar__icons" href="/">
+    <nav class="nav">
+      <div class="left-bar">
+        <span class="nav--icons toggle-menu">
           <svg class="icon">
             <use href="./img/icons/icons.svg#icon-menu"></use>
           </svg>
-        </a>
-        <a class="nav-bar__icons" href="/">
+        </span>
+        <a class="nav--icons" href="#">
           <!-- <svg class="icon">
             <use href="./img/icons/icons.svg#icon-file-text"></use>
           </svg> -->
@@ -44,12 +44,12 @@
       </div>
 
       <div class="right-bar">
-        <a class="nav-bar__icons">
+        <a class="nav--icons">
           <svg class="icon">
             <use href="./img/icons/icons.svg#icon-onedrive"></use>
           </svg>
         </a>
-        <a class="nav-bar__icons">
+        <a class="nav--icons">
           <svg class="icon icon-view remove">
             <use href="./img/icons/icons.svg#icon-grid"></use>
           </svg>
@@ -57,12 +57,12 @@
             <use href="./img/icons/icons.svg#icon-list"></use>
           </svg>
         </a>
-        <a class="nav-bar__icons">
+        <a class="nav--icons">
           <svg class="icon">
             <use href="./img/icons/icons.svg#icon-cog1"></use>
           </svg>
         </a>
-        <a class="nav-bar__icons" href="#">
+        <a class="nav--icons" href="#">
           <img
             src="./img/users/user-1.jpg"
             alt="User photo"
@@ -70,16 +70,16 @@
           />
         </a>
       </div>
-    </header>
-    <div class="content">
+    </nav>
+    <main class="content">
       <div class="sidebar">
-        <nav class="nav">
+        <nav class="sidebar__nav">
           <a href="#">
-            <div class="sidebar__card">
+            <div class="sidebar__card open-window">
               <svg class="icon">
                 <use href="./img/icons/icons.svg#icon-file-text2"></use>
               </svg>
-              <span class="sidebar__text open-window"> New Note </span>
+              <span class="sidebar__text"> New Note </span>
             </div>
           </a>
           <a href="/reminders">
@@ -95,7 +95,7 @@
               <svg class="icon">
                 <use href="./img/icons/icons.svg#icon-price-tag1"></use>
               </svg>
-              <span class="sidebar__text"> Create new label </span>
+              <span class="sidebar__text"> New label </span>
             </div>
           </a>
           <a href="/archive">
@@ -132,7 +132,7 @@
           </a>
         </nav>
       </div>
-      <section class="overview">
+      <div class="content-box">
         <div class="note-card grid">
           This is an example of the note card trying to build. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit. Quas quis eaque, ipsum,
@@ -221,8 +221,8 @@
             </svg>
           </p>
         </div>
-      </section>
-    </div>
+      </div>
+    </main>
     <div class="overlay hidden"></div>
     <footer class="footer" id="section__contact">
       <!-- <p class="footer__logo">

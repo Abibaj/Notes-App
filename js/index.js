@@ -11,10 +11,17 @@ class View {
   _btnOpen = document.querySelector(".open-window");
   _btnClose = document.querySelector(".close-note__btn");
 
+  _sidebarText = document.querySelectorAll(".sidebar__text");
+  _btnToggleMenu = document.querySelector(".toggle-menu");
+
+  _sidebar = document.querySelector(".sidebar");
+  _contentBox = document.querySelector(".content-box");
+
   constructor() {
     this.addHandlerShowWindow();
     this.addHandlerHideWindow();
     this.addHandlerSwitchView();
+    this.addHandlerSwitchSidebar();
     console.log("hey there");
   }
 
@@ -31,6 +38,23 @@ class View {
 
   toggleViewIcon() {
     this._switchViewBtn.forEach((e) => e.classList.toggle("remove"));
+  }
+
+  toggleSidebar() {
+    this._sidebarText.forEach((e) => {
+      e.classList.toggle("remove");
+    });
+
+    console.log(this._sidebar);
+    this._sidebar.classList.toggle(".sidebar__compressed");
+    this._contentBox.classList.toggle(".content-box__uncompressed");
+  }
+
+  addHandlerSwitchSidebar() {
+    this._btnToggleMenu.addEventListener(
+      "click",
+      this.toggleSidebar.bind(this)
+    );
   }
 
   addHandlerSwitchView() {

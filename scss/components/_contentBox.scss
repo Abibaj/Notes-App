@@ -1,7 +1,7 @@
-.overview {
-  width: 75%;
-  height: 100%;
-  padding: 2rem 0;
+.content-box {
+  // width: 75%;
+  // height: 100%;
+  // padding: 2rem 0;
 
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@
     display: none;
   }
 
-  @include configContent;
+  // @include configContent;
 
   .note-card {
     margin-bottom: 1.5rem;
@@ -28,13 +28,5 @@
     border-radius: 1rem;
 
     transition: all 0.15s;
-  }
-
-  .list {
-    width: 80%;
-  }
-
-  .grid {
-    width: 32%;
   }
 }

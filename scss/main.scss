@@ -1,14 +1,14 @@
-@import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utils";
+@import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
 
-@import "components/footer";
-@import "components/header";
+@import "components/contentBox";
 @import "components/newNote";
-@import "components/overview";
 @import "components/sidebar";
 
 @import "layout/content";
+@import "layout/footer";
 @import "layout/nav";
