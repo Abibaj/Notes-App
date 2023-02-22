@@ -5,9 +5,10 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/contentBox";
 @import "components/newNote";
+@import "components/overview";
 @import "components/sidebar";
+@import "components/viewNote";
 
 @import "layout/content";
 @import "layout/footer";

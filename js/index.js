@@ -15,7 +15,7 @@ class View {
   _btnToggleMenu = document.querySelector(".toggle-menu");
 
   _sidebar = document.querySelector(".sidebar");
-  _contentBox = document.querySelector(".content-box");
+  _contentBox = document.querySelector(".content");
 
   constructor() {
     this.addHandlerShowWindow();
@@ -45,9 +45,9 @@ class View {
       e.classList.toggle("remove");
     });
 
-    console.log(this._sidebar);
-    this._sidebar.classList.toggle(".sidebar__compressed");
-    this._contentBox.classList.toggle(".content-box__uncompressed");
+    // console.log(this._sidebar);
+    // this._sidebar.classList.toggle(".sidebar__compressed");
+    // this._contentBox.classList.toggle(".content__uncompressed");
   }
 
   addHandlerSwitchSidebar() {
