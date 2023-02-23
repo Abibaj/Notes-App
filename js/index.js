@@ -5,11 +5,12 @@ class View {
   _switchViewBtn = document.querySelectorAll(".icon-view");
   _noteCard = document.querySelectorAll(".note-card");
 
-  _window = document.querySelector(".new-note__popup");
+  _window = document.querySelector(".view-note");
   _overlay = document.querySelector(".overlay");
 
   _btnOpen = document.querySelector(".open-window");
-  _btnClose = document.querySelector(".close-note__btn");
+  _btnClose = document.querySelector(".close-note__button");
+  _btnConfirmNote = document.querySelector(".btn--confirm");
 
   _sidebarText = document.querySelectorAll(".sidebar__text");
   _btnToggleMenu = document.querySelector(".toggle-menu");
@@ -74,6 +75,10 @@ class View {
   addHandlerHideWindow() {
     this._btnClose.addEventListener("click", this.toggleWindow.bind(this));
     this._overlay.addEventListener("click", this.toggleWindow.bind(this));
+    this._btnConfirmNote.addEventListener(
+      "click",
+      this.toggleWindow.bind(this)
+    );
   }
 }
 
