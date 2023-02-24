@@ -2,6 +2,8 @@ class View {
   // _parentElement = document.querySelector(".upload");
   // _successMessage = "Recipe was successfully uploaded :)";
 
+  // _body = document.querySelector(".body");
+
   _switchViewBtn = document.querySelectorAll(".icon-view");
   _noteCard = document.querySelectorAll(".note-card");
 
@@ -18,37 +20,27 @@ class View {
   _sidebar = document.querySelector(".sidebar");
   _contentBox = document.querySelector(".content");
 
+  _contrastBtn = document.querySelector(".icon--contrast");
+
+  constructor() {}
+}
+
+class sidebarView extends View {
   constructor() {
-    // this.addHandlerShowWindow();
-    // this.addHandlerHideWindow();
-    // this.addHandlerSwitchView();
+    super();
     this.addHandlerSwitchSidebar();
-    console.log("hey there");
+    this.addHandlerSwitchContrast();
   }
 
-  // toggleWindow() {
-  //   this._window.classList.toggle("hidden");
-  //   this._overlay.classList.toggle("hidden");
-  // }
-
-  // toggleView() {
-  //   ["grid", "list"].forEach((s) =>
-  //     this._noteCard.forEach((e) => e.classList.toggle(s))
-  //   );
-  // }
-
-  // toggleViewIcon() {
-  //   this._switchViewBtn.forEach((e) => e.classList.toggle("remove"));
-  // }
+  toggleContrast() {
+    // this._body.classList.toggle("light-theme");
+    // console.log("Yes, I am working");
+  }
 
   toggleSidebar() {
     this._sidebarText.forEach((e) => {
       e.classList.toggle("remove");
     });
-
-    // console.log(this._sidebar);
-    // this._sidebar.classList.toggle(".sidebar__compressed");
-    // this._contentBox.classList.toggle(".content__uncompressed");
   }
 
   addHandlerSwitchSidebar() {
@@ -56,6 +48,10 @@ class View {
       "click",
       this.toggleSidebar.bind(this)
     );
+  }
+
+  addHandlerSwitchContrast() {
+    this._contrastBtn.addEventListener("click", this.toggleContrast.bind(this));
   }
 
   addHandlerSwitchView() {
@@ -67,24 +63,11 @@ class View {
       e.addEventListener("click", this.toggleViewIcon.bind(this))
     );
   }
-
-  // addHandlerShowWindow() {
-  //   this._btnOpen.addEventListener("click", this.toggleWindow.bind(this));
-  // }
-
-  // addHandlerHideWindow() {
-  //   this._btnClose.addEventListener("click", this.toggleWindow.bind(this));
-  //   this._overlay.addEventListener("click", this.toggleWindow.bind(this));
-  //   this._btnConfirmNote.addEventListener(
-  //     "click",
-  //     this.toggleWindow.bind(this)
-  //   );
-  // }
 }
 
-new View();
+new sidebarView();
 
-class ContentView extends View {
+class contentView extends View {
   constructor() {
     super();
     this.addHandlerShowWindow();
@@ -131,4 +114,4 @@ class ContentView extends View {
   }
 }
 
-new ContentView();
+new contentView();

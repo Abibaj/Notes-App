@@ -1,0 +1,44 @@
+extends base
+
+block content 
+  .content-box
+    .overview
+      each note in notes
+        .note-card.grid
+          span=note.note
+
+  .view-note.hidden
+    .note-header
+      .note-header__title
+        form.note-header__form(action="#")
+          textarea.note-header__form--input(type="text", placeholder="Title", maxlength="40")
+        span.close-note__button
+          svg.icon.icon__close-note
+            use(href="./img/icons/icons.svg#icon-cancel-circle")
+    .note-text-area
+      form.note__form(action="#")
+        textarea.note__form--input(type="text", placeholder="Write note")
+    .note-footer
+      .note-footer__icons
+        li
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-alarm")
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-add-user")
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-image")
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-chevron-with-circle-left")
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-chevron-with-circle-right")
+          span.note-footer__icon
+            svg.icon.icon__footer
+              use(href="./img/icons/icons.svg#icon-dots-three-vertical")
+      .btn--confirm
+        svg.icon
+          use(href="./img/icons/icons.svg#icon-checkmark")

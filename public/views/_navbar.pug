@@ -1,0 +1,27 @@
+nav.nav
+  .left-bar
+    span.nav--icons.toggle-menu
+      svg.icon
+        use(href="../img/icons/icons.svg#icon-menu")
+    a.nav--icons(href="#")
+      span Notes
+  .search-bar
+    form.search(action="#")
+      input.search__input(type="text", placeholder="Search Notes")
+      label.search__button(for="#")
+        svg.search__icon
+          use(href="../img/icons/sprite.svg#icon-magnifying-glass")
+  .right-bar
+    a.nav--icons
+      svg.icon
+        use(href="../img/icons/icons.svg#icon-onedrive")
+    a.nav--icons
+      svg.icon.icon-view.remove
+        use(href="../img/icons/icons.svg#icon-grid")
+      svg.icon.icon-view
+        use(href="../img/icons/icons.svg#icon-list")
+    a.nav--icons.icon--contrast
+      svg.icon
+        use(href="../img/icons/icons.svg#icon-contrast")
+    a.nav--icons(href="#")
+      img.user-photo(src="../img/users/user-1.jpg", alt="User photo")

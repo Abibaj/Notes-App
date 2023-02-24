@@ -17,7 +17,7 @@ const app = express();
 
 // SETTING UP PUG ENGINE
 app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "./public/views"));
 
 ///// GLOBAL MIDDLEWARES
 // Serving static files

@@ -9,7 +9,7 @@ exports.getNotes = catchAsync(async (req, res, next) => {
   // BUILD TEMPLATE
 
   // RENDER THE TEMPLATE
-  res.status(200).render("overview", {
+  res.status(200).render("contentBox", {
     title: "All Notes",
     notes,
   });
