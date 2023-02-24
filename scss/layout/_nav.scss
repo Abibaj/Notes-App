@@ -38,7 +38,7 @@
       }
 
       &:not(:last-child):hover {
-        background-color: #666;
+        background-color: $dark-theme-color-primary-lighter-2;
       }
 
       *.icon {
@@ -56,7 +56,7 @@
     height: 100%;
     width: 50%;
     border-radius: 50px;
-    // background-color: #999;
+    // background-color: $dark-theme-color-primary-lighter-3;
     padding: 0 0;
     // visibility: hidden;
 
@@ -70,7 +70,7 @@
       &__input {
         font-family: inherit;
         font-size: inherit;
-        background-color: #555;
+        background-color: $dark-theme-color-primary-lighter-1;
         border: none;
         color: inherit;
         padding: 1rem 2rem;
@@ -81,7 +81,7 @@
         &:focus {
           outline: none;
           width: 100%;
-          background-color: #666;
+          background-color: $dark-theme-color-primary-lighter-2;
         }
 
         &::placeholder {
@@ -133,7 +133,7 @@
       transition: all 0.3s;
 
       &:hover {
-        background-color: #666;
+        background-color: $dark-theme-color-primary-lighter-2;
       }
     }
 
@@ -141,7 +141,7 @@
       height: 4rem;
       width: 4rem;
       border-radius: 50%;
-      border: 1px solid #999;
+      border: 1px solid $dark-theme-color-primary-lighter-3;
     }
   }
 }

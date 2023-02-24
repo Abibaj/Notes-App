@@ -1,7 +1,20 @@
 $default-font-size: 1.6rem;
 
+$color-white: #fff;
+$color-black: #000;
+
+// DARK THEME
 $dark-theme-text-color: #ddd;
 $dark-theme-color-primary: #444;
 
+$dark-theme-color-primary-lighter-1: #555;
+$dark-theme-color-primary-lighter-2: #666;
+$dark-theme-color-primary-lighter-3: #999;
+
+// LIGHT THEME
 $light-theme-text-color: #444;
 $light-theme-color-primary: #eee;
+
+$light-theme-color-primary-darker-1: #ddd;
+$light-theme-color-primary-darker-2: #ccc;
+$light-theme-color-primary-darker-3: #aaa;

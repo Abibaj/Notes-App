@@ -49,7 +49,7 @@
           &:active,
           &:hover {
             transform: translateY(-0.2rem) rotate(-12deg) scale(1.05);
-            // background-color: #666;
+            // background-color: $dark-theme-color-primary-lighter-2;
 
             use {
               fill: $dark-theme-text-color;
