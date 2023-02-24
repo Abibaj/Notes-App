@@ -2,6 +2,8 @@ export class View {
   // _parentElement = document.querySelector(".upload");
   // _successMessage = "Recipe was successfully uploaded :)";
 
+  // _body = document.querySelector(".body");
+
   _switchViewBtn = document.querySelectorAll(".icon-view");
   _noteCard = document.querySelectorAll(".note-card");
 
@@ -17,6 +19,8 @@ export class View {
 
   _sidebar = document.querySelector(".sidebar");
   _contentBox = document.querySelector(".content");
+
+  _contrastBtn = document.querySelector(".icon--contrast");
 
   constructor() {}
 }

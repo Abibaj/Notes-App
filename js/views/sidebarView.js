@@ -4,6 +4,12 @@ class sidebarView extends View {
   constructor() {
     super();
     this.addHandlerSwitchSidebar();
+    this.addHandlerSwitchContrast();
+  }
+
+  toggleContrast() {
+    // this._body.classList.toggle("light-theme");
+    // console.log("Yes, I am working");
   }
 
   toggleSidebar() {
@@ -17,6 +23,10 @@ class sidebarView extends View {
       "click",
       this.toggleSidebar.bind(this)
     );
+  }
+
+  addHandlerSwitchContrast() {
+    this._contrastBtn.addEventListener("click", this.toggleContrast.bind(this));
   }
 
   addHandlerSwitchView() {
